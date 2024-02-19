@@ -1,0 +1,20 @@
+{
+  "name": "AWSCloseAuthTab",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "http://127.0.0.1:35001/"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
